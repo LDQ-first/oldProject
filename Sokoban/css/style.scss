@@ -1,0 +1,142 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(25, 147, 147, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(25, 147, 147, 1);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient( 135deg, #249EEF, #7324EF);
+    background-attachment: fixed;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+$wid: 50px;
+$hei: 50px;
+
+@mixin whf {
+    width: $wid;
+    height: $hei;
+    float: left;
+    border: 1px solid rgba(123, 80, 166, 0.5);
+    box-sizing: border-box;
+}
+
+@mixin wha {
+    width: $wid;
+    height: $hei;
+    position: absolute;
+}
+
+@mixin inbtn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.content {
+    position: relative;
+    margin: 0px auto;
+    .pos-activity {
+        @include whf;
+        background: #00B35F;
+    }
+    
+    .pos-wall {
+        @include whf;
+         background: #008000 url('../img/wall.png') no-repeat center;
+    }
+    .pos-destination {
+        @include whf;
+        background: #5DFFA7;
+    }
+    
+    
+    .box {
+        @include wha;
+        background: url('../img/box.png') no-repeat center;
+    }
+    .person {
+        @include wha;
+        background: url('../img/per.png') no-repeat;  
+    }
+}
+
+@mixin textShadow($shadow...){
+    text-shadow: $shadow;
+}
+
+
+@mixin fontStyle($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+
+.MesConCt {
+    margin: 20px auto;
+    text-align: center;
+    .message{
+        margin: 30px 0;
+        h3 {
+            @include fontStyle(#2391F9, 30px);
+            @include textShadow(0 2px 2px #649DD2,
+                         0 -2px 2px #FFF);
+        }
+        #gk {
+            @include inbtn;
+            margin-right: 10px;
+        }
+        .gk-text {
+            @include fontStyle(#E03D4C, 30px);
+            @include textShadow(0 2px 2px #E55A67,
+                         0 -2px 2px #FFF);
+        }
+        .playWay{
+            display: none;
+           @include fontStyle(#FF672A, 25px);
+           @include textShadow(0 -2px 2px #FF8C5F,
+                         0 -2px 2px #FFF);
+        }
+        .pass {
+            display: none;
+            @include fontStyle(#2DD700, 30px);
+            @include textShadow(0 -2px 2px #84E86A,
+                         0 -2px 2px #FFF);
+
+        }
+    }
+
+    .control {
+        button {
+            @include inbtn;
+            background: #00B35F;
+            color: #FFF;
+            cursor: pointer;
+            &:hover {
+                color: #FF3F14;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery拖拽插件</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p>只能水平拖动</p>
+    <div class='box box_X'>
+        <dl><img src="img/001.jpg"></dl>
+    </div>
+    <p>只能垂直拖动</p>
+    <div class='box box_Y'>
+        <dl><img src="img/002.jpg" ></dl>
+    </div>
+    <p>自由拖动，初始位置固定</p>
+    <div class='box box_XY'>
+        <dl><img src="img/003.jpg" ></dl>
+    </div>
+    <p>自动拖动，初始位置随机</p>
+    <div class='box box_R'>
+        <dl><img src="img/004.jpg"></dl>
+        <dl><img src="img/005.jpg"></dl>
+        <dl><img src="img/006.jpg"></dl>
+        <dl><img src="img/007.jpg"></dl>
+    </div>
+    <p>自动拖动，初始位置随机，hander拖动</p>
+    <div class='box box_H'>
+        <dl><i class='hander'>拖我</i><img src="img/004.jpg"></dl>
+        <dl><i class='hander'>拖我</i><img src="img/005.jpg"></dl>
+        <dl><i class='hander'>拖我</i><img src="img/006.jpg"></dl>
+        <dl><i class='hander'>拖我</i><img src="img/007.jpg"></dl>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/drag.js"></script>
+    <script>
+        $(function(){
+        $('.box_X dl').each(function(){
+            $(this).dragging({
+                move : 'x',
+                randomPosition : true
+            });
+        });
+        $('.box_Y dl').each(function(){
+            $(this).dragging({
+                move : 'y',
+                randomPosition : true
+            });
+        });
+        $('.box_XY dl').each(function(){
+            $(this).dragging({
+                move : 'both',
+                randomPosition : false
+            });
+        });
+        $('.box_R dl').each(function(){
+            $(this).dragging({
+                move : 'both',
+                randomPosition : true
+            });
+        });
+        $('.box_H dl').each(function(){
+            $(this).dragging({
+                move : 'both',
+                randomPosition : true ,
+                hander:'.hander'
+            });
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(25, 147, 147, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #199393;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(315deg, #249EEF, #7324EF);
+  background: linear-gradient(135deg, #249EEF, #7324EF);
+  background-attachment: fixed;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.content {
+  position: relative;
+  margin: 0px auto;
+}
+.content .pos-activity {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 1px solid rgba(123, 80, 166, 0.5);
+  box-sizing: border-box;
+  background: #00B35F;
+}
+.content .pos-wall {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 1px solid rgba(123, 80, 166, 0.5);
+  box-sizing: border-box;
+  background: #008000 url("../img/wall.png") no-repeat center;
+}
+.content .pos-destination {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 1px solid rgba(123, 80, 166, 0.5);
+  box-sizing: border-box;
+  background: #5DFFA7;
+}
+.content .box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: url("../img/box.png") no-repeat center;
+}
+.content .person {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: url("../img/per.png") no-repeat;
+}
+
+.MesConCt {
+  margin: 20px auto;
+  text-align: center;
+}
+.MesConCt .message {
+  margin: 30px 0;
+}
+.MesConCt .message h3 {
+  color: #2391F9;
+  font-size: 30px;
+  text-shadow: 0 2px 2px #649DD2, 0 -2px 2px #FFF;
+}
+.MesConCt .message #gk {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.MesConCt .message .gk-text {
+  color: #E03D4C;
+  font-size: 30px;
+  text-shadow: 0 2px 2px #E55A67, 0 -2px 2px #FFF;
+}
+.MesConCt .message .playWay {
+  display: none;
+  color: #FF672A;
+  font-size: 25px;
+  text-shadow: 0 -2px 2px #FF8C5F, 0 -2px 2px #FFF;
+}
+.MesConCt .message .pass {
+  display: none;
+  color: #2DD700;
+  font-size: 30px;
+  text-shadow: 0 -2px 2px #84E86A, 0 -2px 2px #FFF;
+}
+.MesConCt .control button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  background: #00B35F;
+  color: #FFF;
+  cursor: pointer;
+}
+.MesConCt .control button:hover {
+  color: #FF3F14;
+}
+
+/*# sourceMappingURL=style.css.map */
