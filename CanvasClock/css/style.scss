@@ -1,0 +1,54 @@
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding-top: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, 
+        rgba(23, 105, 206, 0.7),
+        rgba(44, 23, 206, 0.7))
+}
+
+.container {
+    height: 100%;
+
+}
+
+#control {
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    button {
+        border: none;
+        outline: none;
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 0px 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        color: #FFF;
+        background: rgba(65, 172, 59, 1);
+        cursor: pointer;
+        box-shadow: 0 0px 20px rgba(94, 185, 89, 1);
+        &:hover {
+            color: rgba(251, 129, 54, 1);
+        }
+        &.active {
+            background: rgba(234, 69, 72, 1);
+        }
+        @media screen and (max-width: 670px) {
+            margin: 10px 0;
+        }
+    }
+}
+
+#canvas {
+    
+    display: block;
+}
+

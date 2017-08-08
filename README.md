@@ -9,3 +9,5 @@
 [jquery-drag-element](https://ldqblog.me/oldProject/jquery-drag-element)
 
 [Sokoban](https://ldqblog.me/oldProject/Sokoban)
+
+[CanvasClock](https://ldqblog.me/oldProject/CanvasClock)
