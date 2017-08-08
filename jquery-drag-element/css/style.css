@@ -10,7 +10,7 @@ li {
 body {
     font: 14px/1.2 "Helvetica Neue",Helvetica, Arial, "PingFang SC",
      "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    background: url(../img/bg.jpg) no-repeat cover 0 0 #aaa;
+    background: #EEE;
     padding: 50px 0;
 }
 
