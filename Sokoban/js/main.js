@@ -90,6 +90,7 @@
 
                 retract: function(){
                     //console.log('retract');
+                    if(this.moveNum === 0) return;
 
                     $('.person').css({
                         left: this.x1 * 50,
